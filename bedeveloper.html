@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css>
+<title>Be Software Developer</title>
+  </head>
+
+  <body>
+    <div id="page-container">
+      <div class="page">
+        <h1></h1>
+        <p></p>
+        <a style="text-shadow: 0 0 10px red
+        ;" href="#" class="engtm">ENGTM</a>
+	
+<nav class="navbar">
+    <a href="#1">HOME</a>
+    <a href="#3">FOUNDER</a>
+    <a href="#">CONTACT</a> 
+    
+
+
+</nav>
+<i class="fa-solid fa-hippo"></i>
+<h3>Be <br>
+     Software <br>
+      Developer</h3>
+      <a href="#2" class="button">Explore Software</a>
+
+      </div>
+    
+      <div id='2' class="page">
+        <div class="container">
+          <h1 style="color:#fff;
+          font-size: 55px;
+            text-shadow: 0 0 10px red;">Software</h1>
+          <p style='font-size:38px'class="paragraf">
+               Software, data, website design, game making, cyber security. It is divided into front-end and back-end.
+            A front-end developer, he designs websites and games with html, css, js, react.
+            Back-end software works with more numbers and data. There are applications such as php, java, python.
+          </p>
+          
+          <p style='font-size: 38px' class="paragraf">
+            how to learn software? <br>
+            Playlists like 'Learn software in 1 video' are lies. Being a software developer must be experienced and experienced.
+          </p >
+          
+          
+          <p style="font-size: 33px;" class="paragraf">
+            How to start the software?
+If you're starting to make money, don't start.
+The important thing is to do it with love.
+it would be better to start by choosing an easy language </p>
+           
+    
+      <div id='3' class="page">
+        <h1 style="font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#fff;
+        "><p class="ts">Designed by; Contact for more creative designs: </p> <br> <i class="fa-brands fa-instagram" style="color:white">@Saimjrr</i> <br>
+        <i  style='color:white' class="fa-brands fa-whatsapp">+905454175174</i> <br>
+        <i  style='color:white' class="fa-brands fa-twitter">@saimjrr10</i>  <br>
+        <i  style='color:white' class="fa-brands fa-square-envelope">@saim1891@gmail.com</i>
+      </h1>
+        
+      </div>
+    
+      <!-- İhtiyaç duyulan daha fazla sayfa ekleyebilirsiniz -->
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  let pages = document.querySelectorAll(".page");
+  let container = document.getElementById("page-container");
+  let currentPage = 0;
+
+  container.addEventListener("wheel", function(e) {
+    if (e.deltaY > 0) {
+      currentPage++;
+    } else {
+      currentPage--;
+    }
+
+    if (currentPage < 0) {
+      currentPage = 0;
+    } else if (currentPage >= pages.length) {
+      currentPage = pages.length - 1;
+    }
+
+    container.scrollTo({
+      top: pages[currentPage].offsetTop,
+      behavior: "smooth"
+    });
+
+    e.preventDefault();
+  });
+});
+
+    </script>
+    
+  </body>
+</html>
+
